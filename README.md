@@ -8,15 +8,15 @@ sufficiently large hole for a new process to come into memory. It also takes car
 currently in memory using a Round Robin algorithm.
 
 The algorithms to be used for placing a process in memory are:
-* First fit: First fit starts searching the free list from the beginning (highest address), and uses the
-first hole large enough to satisfy the request. If the hole is larger than necessary, it is split, with
+* **First fit**: First fit starts searching the free list from the beginning (highest address), and uses the
+**first hole** large enough to satisfy the request. If the hole is larger than necessary, it is split, with
 the process occupying the higher address range portion of the hole and the remainder being put
 on the free list.
-* Best fit: Chooses the smallest hole from the free list that will satisfy the request. If multiple
+* **Best fit**: Chooses the **smallest hole** from the free list that will satisfy the request. If multiple
 holes meet this criterion, choose the highest address one in the free list. If the hole is larger than
 necessary, it is split, with the process occupying the higher address range portion of the hole and
 the remainder being put on the free list.
-* Worst Fit: Chooses the largest hole from the free list that will satisfy the request. If multiple
+* **Worst Fit**: Chooses the **largest hole** from the free list that will satisfy the request. If multiple
 holes meet this criterion, choose the highest address one in the free list. If the hole is larger than
 necessary, it is split, with the process occupying the higher address range portion of the hole and
 the remainder being put on the free list.
